@@ -85,7 +85,7 @@ class Home extends React.Component {
 
         //fetch data pollution dan alert
         const ale = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly&appid=${APIkey}`;
-        const poll = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${APIkey}`;
+        const poll = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${APIkey}`;
         Promise.all([fetch(ale), fetch(poll)])
           .then(([res3,res4]) => {
             if (res3.ok && res4.ok){
