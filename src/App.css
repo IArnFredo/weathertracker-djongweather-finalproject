@@ -7,7 +7,6 @@ html, body, #root {
 }
 
 .main-container {
-    background: url("./assets/awan.jpg");
     background-size: cover;
     background-position: center;
 }
