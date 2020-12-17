@@ -1,0 +1,269 @@
+.card {
+  margin: auto;
+  background-color: black;
+  padding: inherit;
+}
+
+.card-container {
+  font-family: 'Lobster', cursive;
+  justify-content: center;
+  position: relative;
+  background-image: radial-gradient(circle, #d3c6e1, #c9b9e0, #bdaddf, #b1a1de, #a295de, #9185cf, #7f75c0, #6e66b1, #584e91, #433772, #2d2255, #190e39);
+  padding: 1rem;
+  width: 263px;
+  margin: 10px;
+  display: inline-block;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  border: 1px solid white;
+}
+
+.card-container:hover {
+  box-shadow: 0 0 20px gray;
+}
+
+.img-card-section {
+  overflow: hidden;
+  position: relative;
+  max-height: 256px;
+  max-width: 256px;
+  margin: auto;
+  border: 2px solid pink;
+  border-radius: 5px;
+}
+
+.img-card-section:hover{
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.name-card-section {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.title-card-section {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #15302c;
+}
+
+.desc-card-section {
+  margin: .5rem 1.5rem;
+}
+
+.social-card-section {
+  margin: 30px;
+}
+
+.social-card-style {
+  height: 2.5rem;
+  margin: 0 1rem;
+  transition: all .3s;
+}
+
+.social-card-style:hover {
+  transform: scale(1.2);
+}
+
+.profile-img-card {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  box-shadow: 0 0 0 10px #DFE7F1;
+  border-radius: 50%;
+  top: calc(50% - 10rem);
+  left: calc(50% - 5rem);
+}
+
+@media screen and (max-width: 1440px) {
+  .card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .card-container {
+    left: 10px;
+    margin-left: 3%;
+  }
+
+  .img-card-section {
+    height: 256px;
+    width: 256px;
+  }
+
+  .name-card-section {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .title-card-section {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #15302c;
+  }
+
+  .social-card-style {
+    height: 4rem;
+    transition: all .3s;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .card-container {
+    left: 10px;
+    width: 210px;
+    margin: 5px;
+  }
+
+  .img-card-section {
+    height: 200px;
+    width: 200px;
+  }
+
+  .name-card-section {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .title-card-section {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #15302c;
+  }
+
+  .social-card-style {
+    height: 3rem;
+    transition: all .3s;
+    margin: 3.42187px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-left: 8%;
+    width: auto;
+  }
+
+  .img-card-section {
+    max-width: 256px;
+    max-height: 256px;
+  }
+
+  .name-card-section {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .title-card-section {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #15302c;
+  }
+
+  .social-card-style {
+    height: 3rem;
+    margin: 10px;
+    transition: all .3s;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-container {
+    margin-left: 12.5%;
+    width: auto;
+  }
+
+  .img-card-section {
+    max-width: 230px;
+    max-height: 230px;
+  }
+
+  .name-card-section {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .title-card-section {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #15302c;
+  }
+
+  .social-card-style {
+    height: 3.5rem;
+    margin: 10px;
+    transition: all .3s;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card-container {
+    margin-left: 11.5%;
+    width: auto;
+  }
+
+  .img-card-section {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .name-card-section {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .title-card-section {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #15302c;
+  }
+
+  .social-card-style {
+    height: 3rem;
+    margin: 8px;
+    transition: all .3s;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-container {
+    margin-left: 5.2%;
+    width: auto;
+  }
+
+  .img-card-section {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .name-card-section {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .title-card-section {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #15302c;
+  }
+
+  .social-card-style {
+    height: 3rem;
+    margin: 8px;
+    transition: all .3s;
+  }
+}
