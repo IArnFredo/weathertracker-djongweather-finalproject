@@ -171,6 +171,13 @@ class Home extends React.Component {
     else{
       b = <Pollution pollution={pollution}/>
     }
+
+    if (weatherInfo == null) {
+      b = <div style={{display: 'none'}}>{b}</div>
+      console.log(weatherInfo);
+    }
+
+
     console.log(weatherInfo);
     return (
       <>
