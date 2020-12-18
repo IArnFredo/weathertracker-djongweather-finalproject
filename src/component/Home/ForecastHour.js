@@ -48,7 +48,7 @@ const ForecastHour = props => {
       <Text align="center">Time {hour}:00</Text>
       <WeatherIcon src={iconUrl} />
       <SmallLabel align="center" weight="400">
-        {temp}&#176;
+        {temp}&#176; C
       </SmallLabel>
     </ForecastWrapper>
   );
