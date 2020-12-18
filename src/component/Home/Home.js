@@ -145,24 +145,22 @@ class Home extends React.Component {
     const { value, weatherInfo, alerts, pollution, error} = this.state;
     let a = alerts;
     let b = null;
-    console.log(pollution);
 
     if (alerts == null){
       a = <p style={{visibility: 'hidden'}}>There is no Weather Alert in This Area.</p>
-      console.log(a);
+
     }else {
       a = <Alert alerts={alerts}/>
       this.state.alerts = null;
-      console.log(a);
+
     }
 
     if (pollution !== null){
       a = <p style={{visibility: 'visible', color: 'white'}}>There is no Weather Alert in This Area.</p>
-      console.log(a);
+
     }
     else {
       console.log(alerts);
-      console.log(a);
     }
 
     if (pollution == null){
@@ -174,11 +172,8 @@ class Home extends React.Component {
 
     if (weatherInfo == null) {
       b = <div style={{display: 'none'}}>{b}</div>
-      console.log(weatherInfo);
     }
 
-
-    console.log(weatherInfo);
     return (
       <>
       <HeroSection {...homeObjOne}/>
