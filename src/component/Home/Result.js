@@ -204,7 +204,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
       <CurrentWeatherWrapper>
         <WeatherIcon>{weatherIcon}</WeatherIcon>
         <TemperatureWrapper>
-          <Temperature>{Math.floor(temp)}&#176;</Temperature>
+          <Temperature>{Math.floor(temp)}&#176; C</Temperature>
           <SmallLabel weight="400" firstToUpperCase>
             {description}
           </SmallLabel>
@@ -213,7 +213,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
       <WeatherDetailsWrapper>
         <WeatherDetail>
           <SmallLabel align="center" weight="400">
-            {Math.floor(highestTemp)}&#176;
+            {Math.floor(highestTemp)}&#176; C
           </SmallLabel>
           <Text align="center">High Temp</Text>
         </WeatherDetail>
@@ -231,7 +231,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
         </WeatherDetail>
         <WeatherDetail>
           <SmallLabel align="center" weight="400">
-            {Math.floor(lowestTemp)}&#176;
+            {Math.floor(lowestTemp)}&#176; C
           </SmallLabel>
           <Text align="center">Low Temp</Text>
         </WeatherDetail>
